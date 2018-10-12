@@ -1,28 +1,19 @@
-//перевод числа из бинарной системы в десятичную
-
 package com.gmail.kirillmarch6;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
 
 	public static void main(String[] args) {
-		getNumberInDecimalFormat();
-	}
+		
+		Vector3d a = new Vector3d(5, -1, 3);
+		Vector3d b = new Vector3d(1, 3, -4);
+		
+		
+		System.out.println(Arrays.toString(a.summVectors3d(b)));
+		System.out.println(a.productScalarVectorsd(b));
+		System.out.println(Arrays.toString(a.productVecors3d(b)));
 
-	/**
-	 * Get number in Decimal format
-	 * 
-	 */
-	public static void getNumberInDecimalFormat() {
-		System.out.println("Input number in binary format");
-		Scanner sc = new Scanner(System.in);
-		try {
-			int number = sc.nextInt(2);
-			System.out.println("The number in decimal format - " + number);
-		} catch (Exception e) {
-			System.out.println("The number is not in binary format");
-		}
 	}
 
 }
