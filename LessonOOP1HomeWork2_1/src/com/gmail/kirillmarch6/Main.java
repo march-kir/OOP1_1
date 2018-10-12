@@ -18,6 +18,18 @@ public class Main {
 		Triangle triangle = new Triangle(a,b,c);
 		System.out.println(triangle.getPerimetr());
 		System.out.println(triangle.getArea());
+		
+		Table t = new Table();
+		
+		t.addShape(circle);
+		t.addShape(circle);
+		t.addShape(triangle);
+		t.addShape(circle);
+		t.addShape(circle);
+		t.getInformation();
+		
+		t.deleteShape(circle);
+		t.getInformation();
 
 	}
 

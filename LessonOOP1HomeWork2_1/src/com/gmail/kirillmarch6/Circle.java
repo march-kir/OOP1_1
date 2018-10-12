@@ -46,6 +46,12 @@ public class Circle extends Shape {
 		area = Math.PI * (Math.pow(radius, 2));
 		return area;
 	}
+
+	@Override
+	public String toString() {
+		return "Circle";
+	}
+	
 	
 	
 

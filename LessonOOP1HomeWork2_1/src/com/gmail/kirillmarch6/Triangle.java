@@ -63,6 +63,12 @@ public class Triangle extends Shape {
 				(pointTwo.getX() - pointThree.getX())*(pointOne.getY() - pointThree.getY()))/2;
 		return area;
 	}
+
+	@Override
+	public String toString() {
+		return "Triangle";
+	}
+	
 	
 
 }
