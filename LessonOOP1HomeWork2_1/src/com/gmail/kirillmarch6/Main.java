@@ -17,6 +17,7 @@ public class Main {
 		
 		Triangle triangle = new Triangle(a,b,c);
 		System.out.println(triangle.getPerimetr());
+		System.out.println(triangle.getArea());
 
 	}
 
